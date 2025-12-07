@@ -1,8 +1,9 @@
 import { defineConfig } from 'vite'
 import react from '@vitejs/plugin-react'
 
-// https://vitejs.dev/config/
 export default defineConfig({
-  base: "/shoppingreact",
   plugins: [react()],
+  base: '/',   // IMPORTANT FIX FOR NETLIFY
 })
+
+//Fix Netlify deployment base path
